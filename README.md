@@ -1,5 +1,9 @@
 # Run this application
 
+## Required software
+
+**You must have Docker and Docker Compose installed.**
+
 ## Required configuration
 
 Before running the project, you must create a `docker-compose.yaml` in the folder where both the repositories that this project depends on are, like this:
@@ -61,12 +65,16 @@ networks:
 
 ## Running
 
-After configuring the file and repositories, just run:
+After setting up the file and repositories, run:
 
 `docker compose up`
 
 ## Access the database
 
-Just run:
+Run:
 
 `docker exec -it postgres psql -h localhost -p 5432 -d student_operations -U postgres`
+
+## Access the interface
+
+Go to: `localhost:3000`
