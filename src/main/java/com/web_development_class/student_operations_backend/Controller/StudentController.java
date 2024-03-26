@@ -14,8 +14,8 @@ import com.web_development_class.student_operations_backend.Service.StudentServi
 import jakarta.transaction.Transactional;
 
 @RestController
-@RequestMapping("/api/v1/student")
-@CrossOrigin("http://student-operations-frontend:3000")
+@RequestMapping("/api/v1/students")
+@CrossOrigin("http://localhost:3000")
 public class StudentController {
     
     @Autowired
